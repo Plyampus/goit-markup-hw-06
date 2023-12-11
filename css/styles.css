@@ -1008,7 +1008,6 @@ button {
     line-height: 24px;
     letter-spacing: 0.32px;
     max-width: 264px;
-    margin-bottom: 72px;
   }
 
   .container.social-media-footer {
@@ -1034,7 +1033,6 @@ button {
   .social-list-footer {
     display: flex;
     gap: 16px;
-    margin-bottom: 72px;
   }
 
   .social-list-icon-footer {
@@ -1398,6 +1396,7 @@ button {
     display: flex;
     flex-wrap: nowrap;
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   .social-media {
