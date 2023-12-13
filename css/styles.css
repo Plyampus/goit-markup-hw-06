@@ -103,6 +103,18 @@ button {
   background-color: var(--color-pressed-state);
 }
 
+@media screen and (min-width: 768px) {
+  .order-service-button {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .order-service-button {
+    margin-top: 48px;
+  }
+}
+
 /* MOBILE HEADER STYLES */
 .container-header {
   display: flex;
@@ -278,24 +290,39 @@ button {
     fill: var(--color-cloud);
   }
   /* /MOBILE HEADER STYLES */
-  /* MOBILE HERO STYLES */
+}
+
+.hero-section {
+  background-color: var(--color-dark);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero//background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 72px 0;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero-section {
-    background-color: var(--color-dark);
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/background-image.jpg),
       url(../images/hero/background-image_small_2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 72px 0;
   }
+}
 
+@media screen and (max-width: 767px) {
+  /* MOBILE HERO STYLES */
   .hero-title {
     color: var(--color-white-background);
     font-size: 36px;
@@ -345,6 +372,10 @@ button {
   }
   /* /MOBILE BENEFITS STYLES */
   /* MOBILE OUR TEAM STYLES */
+  .our-team-container {
+    max-width: 296px;
+  }
+
   .our-team-section {
     background-color: var(--color-cloud);
     width: 100%;
@@ -431,6 +462,9 @@ button {
     background-color: var(--color-pressed-state);
   }
   /* /MOBILE OUR TEAM STYLES */
+}
+
+@media screen and (max-width: 767px) {
   /* MOBILE OUR PORTFOLIO STYLES */
   .our-portfolio-section {
     background-color: var(--color-white-background);
@@ -453,10 +487,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 48px;
-  }
-
-  .our-portfolio-img {
-    /* width: 288px; */
   }
 
   .our-portfolio-list-item {
@@ -643,12 +673,27 @@ button {
   /* /MOBILE FOOTER STYLES */
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-color: var(--color-dark);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/background-image_small_2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 736px;
     padding-left: 0;
     padding-right: 0;
   }
+
   /* TABLET HEADER STYLES */
   .page-header {
     background-color: var(--color-white-background);
@@ -670,6 +715,7 @@ button {
   .menu {
     display: flex;
     gap: 40px;
+    margin-right: auto;
   }
 
   .menu-link {
@@ -728,19 +774,10 @@ button {
   .social-list-link:focus {
     color: var(--color-pressed-state);
   }
+
   /* /TABLET HEADER STYLES */
   /* TABLET HERO STYLES */
   .hero-section {
-    background-color: var(--color-dark);
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/background-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     max-width: 768px;
     margin: 0 auto;
     padding: 112px 0;
@@ -757,6 +794,7 @@ button {
     margin: 0 auto;
     max-width: 496px;
   }
+
   /* /TABLET HERO STYLES */
   /* TABLET BENEFITS STYLES */
   .benefits-section {
@@ -777,12 +815,12 @@ button {
   }
 
   .page-benefits-list-item {
-    width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 
   .page-benefits-list-title {
     color: var(--color-dark);
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -888,10 +926,6 @@ button {
   }
   /* /TABLET OUR TEAM STYLES */
   /* TABLET OUR PORTFOLIO STYLES */
-  .our-portfolio-image-tablet {
-    width: 100%;
-  }
-
   .our-portfolio-section {
     background-color: var(--color-white-background);
     padding: 96px 0;
@@ -1014,6 +1048,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     padding-left: 92px;
+    gap: 72px 24px;
   }
 
   .social-media {
@@ -1024,10 +1059,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-  }
-
-  .footer-social-media {
-    margin-left: 24px;
   }
 
   .social-list-footer {
@@ -1113,6 +1144,21 @@ button {
   }
   /* /TABLET FOOTER STYLES */
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero-section {
+    background-color: var(--color-dark);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/background-image_small_2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -1171,17 +1217,6 @@ button {
   /* /DESKTOP HEADER STYLES */
   /* DESKTOP HERO STYLES */
   .hero-section {
-    background-color: var(--color-dark);
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/background-image.jpg),
-      url(../images/hero/background-image_small_2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
@@ -1214,8 +1249,9 @@ button {
     border: 1px solid var(--color-light-slate);
     margin-bottom: 8px;
   }
+
   .page-benefits-list-item {
-    width: 264px;
+    width: calc((100% - 24px) / 4);
   }
 
   .page-benefits-list {
@@ -1225,16 +1261,10 @@ button {
     width: 100%;
   }
 
-  .page-benefits-list-item:nth-child(3n) {
-    margin-top: 0;
-  }
-  .page-benefits-list-item:nth-child(4n) {
-    margin-top: 0;
-  }
-
   .page-benefits-list-title {
     color: var(--color-dark);
     font-size: 20px;
+    text-align: left;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -1397,6 +1427,7 @@ button {
     flex-wrap: nowrap;
     padding-left: 16px;
     padding-right: 16px;
+    gap: 0;
   }
 
   .social-media {
