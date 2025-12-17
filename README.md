@@ -1,27 +1,27 @@
-# WebStudio — Landing Page
+# WebStudio — Responsive Landing Page
 
-Адаптивна посадкова сторінка для дизайн-студії, зверстана за макетом з Figma. Проект демонструє чистий, семантичний підхід до верстки та сучасні техніки frontend-розробки.
+A fully responsive landing page for a fictional design agency, coded from a Figma layout. This project demonstrates a clean, semantic approach to modern frontend development.
 
-**[▶️ Переглянути живу версію (Live Demo)](https://plyampus.github.io/goit-markup-hw-06/)**
+**[▶️ View Live Demo](https://plyampus.github.io/goit-markup-hw-06/)**
 
-![Скріншот сайту WebStudio](https://github.com/Plyampus/goit-markup-hw-06/blob/main/images/screenshot.png?raw=true)
-
----
-
-## 🚀 Основні фічі та реалізований функціонал
-
-*   **Повна адаптивність (Responsive Design):** Сайт коректно відображається на всіх типах пристроїв (мобільні, планшети, десктопи) завдяки використанню **media queries** та тегу **`<picture>`** для оптимізації зображень.
-*   **Семантична та доступна розмітка (HTML5):** Використано семантичні теги для кращої індексації пошуковими системами та доступності (Accessibility).
-*   **Інтерактивні елементи:** Реалізовано робоче модальне вікно та функціональне мобільне меню.
-*   **Оптимізація графіки:** Всі іконки підключені через SVG-спрайти для максимальної швидкості завантаження.
-*   **CSS-анімації:** Додані плавні `transition` ефекти для кнопок та посилань для покращення користувацького досвіду.
+![WebStudio Project Screenshot](https://github.com/Plyampus/goit-markup-hw-06/blob/main/images/screenshot.png?raw=true)
 
 ---
 
-## 🛠️ Стек технологій
+## 🚀 Key Features & Implementation
+
+*   **Fully Responsive Design:** The layout is perfectly adapted for all screen sizes (mobile, tablet, desktop) using media queries and the `<picture>` element for optimized images.
+*   **Semantic & Accessible HTML5:** Built with semantic tags for better SEO and accessibility, ensuring a great user experience for everyone.
+*   **Interactive Elements:** Features a functional modal window and a mobile navigation menu, handled with vanilla JavaScript.
+*   **Optimized Graphics:** All icons are implemented as an SVG sprite for faster loading times and scalability.
+*   **Smooth CSS Transitions:** Hover effects and transitions are used to create a more dynamic and engaging user interface.
+
+---
+
+## 🛠️ Tech Stack Used
 
 *   HTML5
 *   CSS3
-*   SASS (як препроцесор)
-*   JavaScript (для обробки подій модального вікна та мобільного меню)
-*   Figma (як джерело макету)
+*   SASS (Preprocessor)
+*   JavaScript (for modal and mobile menu event handling)
+*   Figma (as the design source)
